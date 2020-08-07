@@ -1,0 +1,418 @@
+body {
+    margin:0;
+
+}
+h1 {
+    background:deepskyblue;
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:0.5rem;
+}
+h2 {
+    margin:0;
+    padding:0.25rem 0.05rem;
+    border-left:double 0.5rem deepskyblue;
+}
+.ui_area {
+    margin:1rem;
+    padding:0.5rem 1rem;
+    border:solid 2px gray;
+}
+.ui_area_row {
+    display:flex;
+    width:100%;
+    align-items:center;
+    margin:0.25rem;
+    flex-wrap:wrap;
+}
+.ui_explain_area {
+    width:80%;
+}
+.ui_demo_area {
+    display:flex;
+    width:20%;
+    justify-content:flex-end;
+
+}
+@media (max-width:768px){
+    .ui_explain_area {
+        width:100%;
+    }    
+    .ui_demo_area{
+        width:100%;
+    }
+
+}
+
+/* framework_area*/
+
+/* 
+ * 10 UI set
+ * 
+ * Auther:Seiya Asahina
+ * Version:1.0
+ * Last update: 2020-07-05
+ *
+ */
+
+
+
+/* select square */
+
+.ui10-select_square { 
+    position:relative;
+    width:100%;
+}
+.ui10-select_square select {
+    font-size:1.2rem;
+    font-family:monospace;
+    width:100%;
+    margin:0.25rem 0;
+    padding:0.25rem 2rem 0.25rem 0.5rem;
+    border:solid 0.2rem deepskyblue;
+    background:white;
+    cursor:pointer;
+}
+.ui10-select_square select:focus {
+    outline:none;
+}
+.ui10-select_square::before {
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0.5rem;
+    transform:translate(0%,-50%);
+
+    width:0;
+    height:0;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-top: 0.5rem solid deepskyblue;
+
+    pointer-events: none;
+}
+.ui10-select_square select:-ms-expand {
+	display: none;
+}
+.ui10-select_square select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    
+}
+.ui10-select_square_orange select { border-color:orange; }
+.ui10-select_square_green select { border-color:forestgreen; }
+.ui10-select_square_crimson select { border-color:crimson; }
+.ui10-select_square_orange::before { border-top-color:orange; }
+.ui10-select_square_green::before { border-top-color:forestgreen; }
+.ui10-select_square_crimson::before { border-top-color:crimson; }
+
+
+
+/* select square dark */
+
+.ui10-select_square_dark { 
+    position:relative;
+    width:100%;
+}
+.ui10-select_square_dark select {
+    font-size:1.2rem;
+    font-family:monospace;
+    width:100%;
+    margin:0.25rem 0;
+    padding:0.25rem 2rem 0.25rem 0.5rem;
+    border:solid 0.2rem deepskyblue;
+    background:black;
+    color:white;
+    cursor:pointer;
+}
+.ui10-select_square_dark select:focus {
+    outline:none;
+}
+.ui10-select_square_dark::before {
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0.5rem;
+    transform:translate(0%,-50%);
+
+    width:0;
+    height:0;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-top: 0.5rem solid deepskyblue; 
+
+    pointer-events: none;
+}
+.ui10-select_square_dark select:-ms-expand {
+	display: none;
+}
+.ui10-select_square_dark select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    
+}
+.ui10-select_square_dark_orange select { border-color:orange; }
+.ui10-select_square_dark_green select { border-color:forestgreen; }
+.ui10-select_square_dark_crimson select { border-color:crimson; }
+.ui10-select_square_dark_orange::before { border-top-color:orange; }
+.ui10-select_square_dark_green::before { border-top-color:forestgreen; }
+.ui10-select_square_dark_crimson::before { border-top-color:crimson; }
+
+/* select circle */
+
+.ui10-select_circle { 
+    position:relative;
+    width:100%;
+}
+.ui10-select_circle select {
+    font-size:1.2rem;
+    font-family:monospace;
+    width:100%;
+    margin:0.25rem 0; 
+    padding:0.25rem 2rem 0.25rem 1rem;
+    border:solid 0.2rem deepskyblue;
+    border-radius:2rem;
+    background:white;
+    cursor:pointer;
+}
+.ui10-select_circle select:focus {
+    outline:none;
+}
+.ui10-select_circle::before {
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0.5rem;
+    transform:translate(0%,-50%);
+
+    width:0;
+    height:0;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-top: 0.5rem solid deepskyblue;
+
+    pointer-events: none;
+}
+.ui10-select_circle select:-ms-expand {
+	display: none;
+}
+.ui10-select_circle select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    
+}
+.ui10-select_circle_orange select { border-color:orange; }
+.ui10-select_circle_green select { border-color:forestgreen; }
+.ui10-select_circle_crimson select { border-color:crimson; }
+.ui10-select_circle_orange::before { border-top-color:orange; }
+.ui10-select_circle_green::before { border-top-color:forestgreen; }
+.ui10-select_circle_crimson::before { border-top-color:crimson; }
+
+
+
+
+/* select circle dark */
+
+.ui10-select_circle_dark { 
+    position:relative;
+    width:100%;
+}
+.ui10-select_circle_dark select {
+    font-size:1.2rem;
+    font-family:monospace;
+    width:100%;
+    margin:0.25rem 0;
+    padding:0.25rem 2rem 0.25rem 1rem;
+    border:solid 0.2rem deepskyblue;
+    border-radius:2rem;
+    background:black;
+    color:white;
+    cursor:pointer;
+}
+.ui10-select_circle_dark select:focus {
+    outline:none;
+}
+.ui10-select_circle_dark::before {
+    content:"";
+    position:absolute;
+    top:50%;
+    right:0.5rem;
+    transform:translate(0%,-50%);
+
+    width:0;
+    height:0;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+	border-top: 0.5rem solid deepskyblue; 
+
+    pointer-events: none;
+}
+.ui10-select_circle_dark select:-ms-expand {
+	display: none;
+}
+.ui10-select_circle_dark select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    
+}
+.ui10-select_circle_dark_orange select { border-color:orange; }
+.ui10-select_circle_dark_green select { border-color:forestgreen; }
+.ui10-select_circle_dark_crimson select { border-color:crimson; }
+.ui10-select_circle_dark_orange::before { border-top-color:orange; }
+.ui10-select_circle_dark_green::before { border-top-color:forestgreen; }
+.ui10-select_circle_dark_crimson::before { border-top-color:crimson; }
+
+
+/* textarea square */
+.ui10-textarea_square {
+    width:100%;
+    border:solid 0.2rem deepskyblue;
+    background:white;
+    font-family:monospace;
+    font-size:1.2rem;
+    line-height:1.7rem;
+    max-height:100%;
+    resize:none;
+    box-sizing:border-box;
+}
+.ui10-textarea_square:focus { 
+    box-shadow:0px 0px 5px 2px  deepskyblue;
+    outline:none;
+}
+.ui10-textarea_square_orange { border-color:orange; }
+.ui10-textarea_square_green { border-color:forestgreen; }
+.ui10-textarea_square_crimson { border-color:crimson; }
+.ui10-textarea_square_orange:focus { box-shadow:0px 0px 5px 2px orange; }
+.ui10-textarea_square_green:focus { box-shadow:0px 0px 5px 2px forestgreen; }
+.ui10-textarea_square_crimson:focus { box-shadow:0px 0px 5px 2px crimson; }
+
+
+/* textarea circle */
+.ui10-textarea_circle {
+    width:100%;
+    border:solid 0.2rem deepskyblue;
+    border-radius:0.5rem;
+    background:white;
+    font-family:monospace;
+    font-size:1.2rem;
+    line-height:1.7rem;
+    max-height:100%;
+    resize:none;
+    box-sizing:border-box;
+}
+.ui10-textarea_circle:focus {
+    box-shadow:0px 0px 5px 2px  deepskyblue;
+    outline:none;
+}
+.ui10-textarea_circle_orange { border-color:orange; }
+.ui10-textarea_circle_green { border-color:forestgreen; }
+.ui10-textarea_circle_crimson { border-color:crimson; }
+.ui10-textarea_circle_orange:focus { box-shadow:0px 0px 5px 2px orange; }
+.ui10-textarea_circle_green:focus { box-shadow:0px 0px 5px 2px forestgreen; }
+.ui10-textarea_circle_crimson:focus { box-shadow:0px 0px 5px 2px crimson; }
+
+
+
+
+
+/* text square */
+
+.ui10-text_square{
+    width:100%;
+    font-size:1.5rem;
+    padding:0.5rem 0;
+    border:solid 0.25rem deepskyblue;
+    background:white;
+    transition:0.2s;
+}
+.ui10-text_square:focus {
+    box-shadow:0px 0px 5px 2px  deepskyblue;
+    transition:0.2s;
+    outline:none;
+}
+.ui10-text_square_orange { border-color:orange; }
+.ui10-text_square_green { border-color:forestgreen; }
+.ui10-text_square_crimson { border-color:crimson; }
+.ui10-text_square_orange:focus { box-shadow:0px 0px 5px 2px orange; }
+.ui10-text_square_green:focus { box-shadow:0px 0px 5px 2px forestgreen; }
+.ui10-text_square_crimson:focus { box-shadow:0px 0px 5px 2px crimson; }
+
+
+
+
+/* text square dark */
+
+.ui10-text_square_dark{
+    width:100%;
+    font-size:1.5rem;
+    padding:0.5rem 0;
+    border:solid 0.25rem deepskyblue;
+    background:black;
+    color:white;
+    transition:0.2s;
+}
+.ui10-text_square_dark:focus {
+    box-shadow:0px 0px 5px 2px  deepskyblue;
+    transition:0.2s;
+    outline:none;
+}
+.ui10-text_square_dark_orange { border-color:orange; }
+.ui10-text_square_dark_green { border-color:forestgreen; }
+.ui10-text_square_dark_crimson { border-color:crimson; }
+.ui10-text_square_dark_orange:focus { box-shadow:0px 0px 5px 2px orange; }
+.ui10-text_square_dark_green:focus { box-shadow:0px 0px 5px 2px forestgreen; }
+.ui10-text_square_dark_crimson:focus { box-shadow:0px 0px 5px 2px crimson; }
+
+
+
+/* text underline */
+
+.ui10-text_underline{
+    width:100%;
+    font-size:1.5rem;
+    padding:0.5rem 0;
+    border:none;
+    border-bottom:solid 0.25rem deepskyblue;
+    background:white;
+    box-sizing: border-box;
+}
+.ui10-text_underline:focus {
+    background:linear-gradient( 0deg, deepskyblue 0% , white 10%);
+    outline:none;
+}
+.ui10-text_underline_orange { border-color:orange; }
+.ui10-text_underline_green { border-color:forestgreen; }
+.ui10-text_underline_crimson { border-color:crimson; }
+.ui10-text_underline_orange:focus { background:linear-gradient( 0deg, orange 0% , white 10%); }
+.ui10-text_underline_green:focus { background:linear-gradient( 0deg, forestgreen 0% , white 10%); }
+.ui10-text_underline_crimson:focus { background:linear-gradient( 0deg, crimson 0% , white 10%); }
+
+
+/* text underline_dark */
+
+.ui10-text_underline_dark{
+    width:100%;
+    font-size:1.5rem;
+    padding:0.5rem 0;
+    border:none;
+    border-bottom:solid 0.25rem deepskyblue;
+    background:black;
+    color:white;
+    box-sizing: border-box;
+}
+.ui10-text_underline_dark:focus {
+    background:linear-gradient( 0deg, deepskyblue 0% , black 10%);
+    outline:none;
+}
+.ui10-text_underline_dark_orange { border-color:orange; }
+.ui10-text_underline_dark_green { border-color:forestgreen; }
+.ui10-text_underline_dark_crimson { border-color:crimson; }
+.ui10-text_underline_dark_orange:focus { background:linear-gradient( 0deg, orange 0% , black 10%); }
+.ui10-text_underline_dark_green:focus { background:linear-gradient( 0deg, forestgreen 0% , black 10%); }
+.ui10-text_underline_dark_crimson:focus { background:linear-gradient( 0deg, crimson 0% , black 10%); }
+
